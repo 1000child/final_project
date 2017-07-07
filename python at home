@@ -1,0 +1,137 @@
+import time
+
+print("Two Sides on Every Coin")
+
+print("\nPress spacebar to START!")
+
+def greet(name, gamename):
+    return """\nCongratulations! Your character, {}, is now ready to begin the {} game.""".format(name,gamename)
+
+def hallway():
+    return """\nNow you're just in front of the exit. Your hand makes contact with the cold door handle and it squeaks shrilly as you turn it. The hallway outside is deserted."""
+
+
+user_input = input()
+
+if user_input == " ":
+    print("Choose Your Storyline")
+    print("Type 'Awareness' or 'Morality'")
+    
+    story_choice = input()
+    name = "User"
+    if "aw" in str(story_choice).lower():
+        gamename = "Awareness"
+        print("You are about to embark on the {} route!  -- But, before you do, please select a character. Are you a girl? Or a boy?".format(gamename))
+
+        gender = input()
+        if gender == "girl":
+            name = "Iris"
+        if gender == "boy":
+            name = "Iida"
+
+        print(greet(name, gamename)) 
+
+        for dots in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("""You open your eyes and...[placeholder]""") 
+        
+
+
+        
+            
+    if "m" in str(story_choice).lower():
+        gamename = "Morality"
+        print("You have selected the {} path! Before you continue, though, please select a character. Are you a girl? Or a boy?".format(gamename))
+
+        gender = input()
+        if gender == "girl":
+            name = "Rin"
+        if gender == "boy":
+            name = "Rui" 
+
+        print(greet(name,gamename))
+    
+        num_dots = 0
+        while num_dots < 5:
+            time.sleep(1)
+            print(".", end = ' ')
+            num_dots+=1        
+
+                
+        print("""\nYou open your eyes and you are in a small, windowless room with the national flag draped across one wall. There is an imposing man standing across from you at the other end of the rickety table you've been forcefully seated at and an even more imposing military-grade gun in his left hand.""")
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
+            
+        print("\nGuard:")
+        assignment = """\t{}, you've been assigned under Gen. Matis with the rest of Squadron 13. You are to meet them for Basic Training at 0700. You have twenty minutes until report time in the Basic Training Field. It's just past the mess hall.""".format(name)
+        print(assignment)
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("""\nThe imposing man levels a glower at you, then turns to exit. You wait a moment, then decide it's probably safe now. Yay! You've made it into the Epannian military- now you can proudly say you serve for your country, Epan.""")
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print(hallway())
+
+        for dots in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nYou hesitate for a moment. Do you want to go straight to the Basic Training Field? Or would you rather explore your new home?")
+
+        print("\nType 'basic training field' or 'explore'.")
+
+        free_time = input()
+        if "b" in str(free_time).lower():
+            print("\nAlright! You set off in the direction you believe the mess hall is in... but you quickly encounter a critical problem. You don't have a clue where the fields are, or even where you are. You look behind you and find you're already hopelessly lost. Oh goodness.")
+        if "e" in str(free_time).lower():
+            print("\nExcellent! You turn on your heel and pick a direction at random to further investigate. For the most part, the compound is uninhabited as all the soldiers are out on either training and fieldwork.")
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
+        
+        print("\nAs you stride past yet another bland, unmarked door, you hear hushed voices leaking through the wall.")
+
+        for dots in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nVoices:")
+        print("\t(voice1)... rebellions out of hand... somehow... to scare them off...")
+
+        time.sleep(5)
+
+        print("\t(voice2)... but what about the recent... on fringe territories... not enough personnel...")
+
+        time.sleep(5)
+
+        print("\t(voice1)sigh... it is what it is... contact general... know what to do...")
+
+        for dots in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
