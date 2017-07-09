@@ -1,14 +1,14 @@
 import time
 
-print("Two Sides on Every Coin")
+print("")
 
-print("\nPress spacebar to START!")
+print("\nPress the spacebar to START!")
 
 def greet(name, gamename):
     return """\nCongratulations! Your character, {}, is now ready to begin the {} game.""".format(name,gamename)
 
 def hallway():
-    return """\nNow you're just in front of the exit. Your hand makes contact with the cold door handle and it squeaks shrilly as you turn it. The hallway outside is deserted."""
+    return """\nNow you're just in front of the exit. Your hand makes contact with the cold door handle and the door releases a low groan as you push it open. The hallway outside is deserted."""
 
 
 user_input = input()
@@ -19,6 +19,7 @@ if user_input == " ":
     
     story_choice = input()
     name = "User"
+#if for story    
     if "aw" in str(story_choice).lower():
         gamename = "Awareness"
         print("You are about to embark on the {} route!  -- But, before you do, please select a character. Are you a girl? Or a boy?".format(gamename))
@@ -40,7 +41,7 @@ if user_input == " ":
 
 
         
-            
+#if for story            
     if "m" in str(story_choice).lower():
         gamename = "Morality"
         print("You have selected the {} path! Before you continue, though, please select a character. Are you a girl? Or a boy?".format(gamename))
@@ -60,21 +61,22 @@ if user_input == " ":
             num_dots+=1        
 
                 
-        print("""\nYou open your eyes and you are in a small, windowless room with the national flag draped across one wall. There is an imposing man standing across from you at the other end of the rickety table you've been forcefully seated at and an even more imposing military-grade gun in his left hand.""")
+        print("""\nYou open your eyes and you are in a small, windowless room with the school emblem draped across one wall. There is an imposing man standing across from you at the other end of the dark wood table you've been seated at for the last hour and an even more imposing file folder in his left hand.""")
 
         for dots in range(14):
             time.sleep(1)
             print(".", end = ' ')
             
-        print("\nGuard:")
-        assignment = """\t{}, you've been assigned under Gen. Matis with the rest of Squadron 13. You are to meet them for Basic Training at 0700. You have twenty minutes until report time in the Basic Training Field. It's just past the mess hall.""".format(name)
+        print("\nTeacher:")
+        assignment = """\t{}, you've been assigned under Dr. Matis with the rest of class 1A. You are to meet them for Orientation at 7:00. You have twenty minutes until report time in the Auditorium. It's just past the cafeteria.""".format(name)
         print(assignment)
 
         for dots in range(14):
             time.sleep(1)
             print(".", end = ' ')
 
-        print("""\nThe imposing man levels a glower at you, then turns to exit. You wait a moment, then decide it's probably safe now. Yay! You've made it into the Epannian military- now you can proudly say you serve for your country, Epan.""")
+        print("""\nThe imposing man levels a stare at you, then turns to exit. Whew! That was stressful- but at long last, you've passed your final interview.""")
+        print("\nYay! You've finally made it into the Epannian School of Strategy and Military Command! Now you can proudly say you are a student of the most prestigious school in your country, Epan.")
 
         for dots in range(14):
             time.sleep(1)
@@ -86,52 +88,464 @@ if user_input == " ":
             time.sleep(1)
             print(".", end = ' ')
 
-        print("\nYou hesitate for a moment. Do you want to go straight to the Basic Training Field? Or would you rather explore your new home?")
+        print("\nYou hesitate for a moment. Do you want to go straight to the Auditorium? Or would you rather explore your new home for the next four years?")
 
-        print("\nType 'basic training field' or 'explore'.")
+        print("\nType 'auditorium' or 'explore'.")
 
         free_time = input()
-        if "b" in str(free_time).lower():
-            print("\nAlright! You set off in the direction you believe the mess hall is in... but you quickly encounter a critical problem. You don't have a clue where the fields are, or even where you are. You look behind you and find you're already hopelessly lost. Oh goodness.")
+        if "a" in str(free_time).lower():
+            print("\nAlright! You set off in the direction you believe the cafeteria is in... but you quickly encounter a critical problem. You don't have a clue where anything is, or even where you are now. You look behind you and find you're already hopelessly lost in an unmarked hallway. Oh goodness!")
         if "e" in str(free_time).lower():
-            print("\nExcellent! You turn on your heel and pick a direction at random to further investigate. For the most part, the compound is uninhabited as all the soldiers are out on either training and fieldwork.")
+            print("\nExcellent! You turn on your heel and pick a direction at random to further investigate. This should be fun! For the most part, the building is uninhabited as all the current students are elsewhere, either in classes or in tactical battlefield simulations.")
 
         for dots in range(14):
             time.sleep(1)
             print(".", end = ' ')
         
-        print("\nAs you stride past yet another bland, unmarked door, you hear hushed voices leaking through the wall.")
+        print("\nAs you stride past yet another dark, unmarked door, you hear something break the monotanous sound of your own footsteps. Hushed voices are leaking past the door up ahead on your right.")
 
         for dots in range(4):
             time.sleep(1)
             print(".", end = ' ')
 
         print("\nVoices:")
-        print("\t(voice1)... rebellions out of hand... somehow... to scare them off...")
+        print("\t(voice1)... tensions out of hand... somehow... to find out their plans...")
 
         time.sleep(5)
 
-        print("\t(voice2)... but what about the recent... on fringe territories... not enough personnel...")
+        print("\t(voice2)... but what about the recent... threats... exchange students... not enough information...")
 
         time.sleep(5)
 
-        print("\t(voice1)sigh... it is what it is... contact general... know what to do...")
+        print("\t(voice1)sigh... it is what it is... contact the Dr. ... know what to do...")
 
         for dots in range(4):
             time.sleep(1)
             print(".", end = ' ')
 
+        print("\nWould you like to keep listening?")
+
+        print("\nType 'yes' or 'no'")
+
+        listen = input()
+        if "y" in listen:
+            print("\nYou inch in closer and you can hear your own heart beat in the ear that you press to the crack in the door. The voices inside seem to hush even further. What's going on? Threats? The doctor? Find what out? ...you lose yourself in thought.")
+        if "n" in listen:
+            print("\nYou stumble back from the noncommittal door that now seems to hold so many secrets. What's going on? Threats? The doctor? Find what out? ...you lose yourself in thought.")
+
+        for dots in range(9):
+            time.sleep(1)
+            print(".", end = ' ')        
+        
+        print("\nYou break from your reverie with a jolt. You look around and find you're still thoroughly lost. Oh no! There's only two minutes till 7:00!")
+
+        for dots in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+        
+        print("\nYou start to run, but by the time you break around the corner of yet another unmarked hallway you realize it might be hopeless.")             
+
+        for dots in range(9):
+            time.sleep(1)
+            print(".", end = ' ')         
+
+        print("\nYou're bent over gasping with your hands on your knees when you hear a new set of foosteps rounding the corner in front of you. You look up and a stern man in an unknown uniform is walking toward you, and before you're even able to register it he's stopped in front of you.") 
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nHow will you address the man?")
+
+        print("""\n1)'address him as sir and offer a salut'
+2)'ask the man, "who're you?"'
+3)'ignore him and get back to breathing, you don't know him'
+4)'avoid eye contact; he's scary!'""")
+
+        print("Type '1', '2', '3', or '4'")
+
+        officer = input()
+        if officer == "1":
+            print("\n{}:".format(name))
+            print("\tSir.")
+
+            time.sleep(2)
+            
+            print("\nUnknown:")
+            print("\tYoung student. You've got a minute to report in the Auditorium. What are you doing here?")
+
+            time.sleep(4)
+            
+            print("\n{}:".format(name))
+            print("\tSigh...My name is {}. I am aware of the urgency, but I seem to have lost my way, sir. If you could point me in the right direction...?".format(name))
+
+            time.sleep(6)
+
+            print("\nThe man sighs and cocks his head towards the corner at the other end of the hall.")
+
+            time.sleep(4)
+
+            print("\nUnknown:")
+            print("\tYou can follow me. I'm also headed in that direction.")
+
+            time.sleep(4)
+
+            
+        if officer == "2":
+            print("\nUnknown:")            
+            print("\t...")
+
+            time.sleep(2)
+            
+            print("\nThe weight of his stare hits you like a weight on your neck. The stern man suddenly grips you by the ear and begins walking again, dragging you alongside him. Your eyes are watering and you realize he must be a teacher here.")
+
+            time.sleep(8)
+            
+            print("\nUnknown:")            
+            print("\tUgh... Rookies. You know you're supposed to be in the Auditorium in...")
+
+            time.sleep(4)
+
+            print("\nThe man checks his watch and lets out a sigh.")
+
+            time.sleep(4)
+
+            print("\nUnknown:")
+            print("\t30 seconds. --What's your name, kid?")
+
+            time.sleep(4)
+
+            print("\nYou squirm uncomfortably.")
+
+            time.sleep(2)
+
+            print("\n{}:".format(name))
+            print("\t...My name is {}. Are you taking me there now?".format(name))
+
+            time.sleep(4)
+
+            print("\nUnknown:")            
+            print("\t...No more questions, squirt, and try to keep your trap shut on the way.")
+
+            time.sleep(6)
+
+            print("\n{}:".format(name))
+            print("\t...")
+
+            time.sleep(2)
+            
+        if officer == "3":
+            print("\nYou avoid eye contact but the man just isn't having it.")
+
+            time.sleep(4)
+            
+            print("\nUnknown:")            
+            print("\t...You there. Newbie. You've got a minute to report in the Auditorium. Quit dawdling and get moving. Scram!")
+
+            time.sleep(6)
+
+            print("\nThe man makes a shooing motion with his hands and shakes his head in annoyance.")
+
+            time.sleep(6)
+
+            print("\nUnknown:") 
+            print("\tUgh, nevermind. I bet you don't even know where it is. Come on, kid. It's this way.")
+
+            time.sleep(6)
+    
+        if officer == "4":
+            print("\nThe man's stare softens as he appraises you.")
+
+            time.sleep(4)
+
+            print("\nUnknown:")
+            print("\tExcuse me, you're a new student, correct? There's only a minute until report time for the Orientation. What's your name?")
+
+            time.sleep(8)
+
+            print("\n{}:".format(name))
+            print("\t...My name is {}. Um... Could you please show me where the Auditorium is? I'm lost...".format(name))
+
+            time.sleep(6)
+
+            print("\nThe man sighs and cocks his head towards the corner at the other end of the hall.")
+
+            time.sleep(6)
+
+            print("\nUnknown:")
+            print("\tYou can follow me. I'm also headed in that direction.")
+
+            time.sleep(4)
+
+
+        print("\nWhew. You've just managed to slip in with the crowd of last-second students and snatch a seat. The mystery man walked off somewhere as soon as the Auditorium was in view.")
+
+        time.sleep(8)
+        
+        print("\n...He seemed a little rough around the edges, but he did bring you along when he could've just left you to wander. Huh, it wouldn't be a stretch to imagine him doing it, though.")
+
+        time.sleep(2)
+        
+        for dots in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nYou shake free of your thoughts and focus on the stage. The headmaster appears to be introducing all of the teachers.")
+
+        time.sleep(6)
+
+        print("\nWhoa! The man you met is up there too! He stands up as the head moves on to begin introducing him.")
+
+        time.sleep(6)
+
+        print("\nHeadmaster:")
+        print("\tAnd here is our most recent addition to the staff here at Epannian, Dr. Matis! He'll be teaching Espionage Tactics and is the homeroom teacher to all you students assigned to class 1A. Next up, is Mrs. Spannend...")
+
+        time.sleep(1)
+
+        for dots in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nThe rest of Orientation droned on as all the teachers returned to their seats and the head began talking about the pride of the school and upcoming exams. It all came to a close with a speech from the student body president of the freshmen and a final remark from the vice headmaster.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print("\n ")
+            print("___", end = ' ')
+
+        print("\nYou fall back upon your small bed and close your eyes to the unfamiliar dorm room around you.")
+
+        time.sleep(6)
+
+        print("\n{}:".format(name))
+        print("\tWow...what a long day! I'm ready to pass out; hopefully the night lasts long enough to get a good rest.")
+
+        time.sleep(6)
+
+        print("\nYou smile to yourself and think of your day and your family far away back home. Oh! They must be wondering how the final interview went. Maybe your mom will pick up if you call.")
+
+        time.sleep(8)
+
+        print("\nDo you want to call Mom now or in the morning?")
+
+        print("\nType 'now' or 'later'")
+
+        when_call = input()
+        if 'n' in when_call:
+            print("\nYou dig around for the cheap phone your mom purchased for you (so you could keep in contact while at school) and press speed dial one.")
+
+            time.sleep(8)
+            
+            print("\nRiing... Riing... Riing... Rii-- Click.")
+
+            time.sleep(4)
+
+            print("\nMom:")
+            print("\t... Hello? Oh, {}! I've been waiting all day! So...? How'd it go?".format(name))
+
+            time.sleep(6)
+
+            print("\n{}:".format(name))
+            print("\t...Eeeee! I made it!! Haha! I made it into Epannian!")
+
+            time.sleep(4)
+
+            print("\nMom:")
+            print("\tOh my goodness! Oh... I'm so proud of you, {}. My baby, you've made your sisters and I so proud. Oh honey...".format(name))
+
+            time.sleep(8)
+
+            print("\nYou can hear your mom happily tearing up on the other end.")
+
+            time.sleep(4)
+
+            print("\n{}:".format(name))
+            print("\t...")
+
+            time.sleep(2)
+
+            print("\nMom:")
+            print("\tSniffle... Oh! Before I go, sweetie, I want to let you know-- be careful anytime you go out, ok {}? There's been a lot in the news about threats on Epannian students from rival schools. I know you'll have buddies who want to hang out but be sure you're careful. I worry so much for you now that you're so far away... Be safe, ok hon?".format(name))
+
+            time.sleep(8)
+
+            print("\nYour mind whirrs as you connect the conversation you overheard earlier today to the news of threats on your fellow students.")
+
+            time.sleep(8)
+
+            print("\nMom:")
+            print("\t... Sweetie?")
+
+            time.sleep(2)
+
+            print("\n{}:".format(name))
+            print("\tOh- of course mom, I'll keep my guard up. You don't have to worry, I promise.")
+
+            time.sleep(6)
+
+            print("\nMom:")
+            print("\tSniffle... Alright, {}. I love you. Hmm, but don't forget to have fun, too. Do your best while you're there! Bye...".format(name))
+
+            time.sleep(8)
+
+            print("Hmmm. You collapse back down onto the duvet and feel yourself nodding off.")
+
+            time.sleep(6)
+
+            print("\n{}:".format(name))
+            print("\tAaaah. Time for some shuteye. hmmm... ")
+
+            time.sleep(4)
+
+            print("\n...You fall asleep in your clothes and dream deeply of home and happy childhood moments.")
+
+            time.sleep(2)
+
+            for time_skips in range(4):
+                time.sleep(1)
+                print("\n ")
+                print("__", end = ' ')
+
+            print("\nBEEP... BEEP... BEEP... BE--")
+
+            time.sleep(2)
+
+            print("\n{}:".format(name))
+            print("""\tUrgh... what... where...?
+                  Oh, right. Epannian!""")
+
+            time.sleep(4)
+
+            
+        if 'l' in when_call:
+            print("\nYeah... it is already so late- probably best to let her rest and just check in when morning comes. You'll just have to set your alarm early.")
+
+            time.sleep(8)
+
+            print("\n{}:".format(name))
+            print("\tAaaah. Time for some shuteye. hmmm... ")
+
+            time.sleep(4)
+
+            print("\n...You fall asleep in your clothes and dream deeply of home and happy childhood moments.")
+
+            time.sleep(2)
+
+            for time_skips in range(4):
+                time.sleep(1)
+                print("\n ")
+                print("__", end = ' ')
+
+            print("\nBEEP... BEEP... BEEP... BE--")
+
+            time.sleep(2)
+
+            print("\n{}:".format(name))
+            print("""\tUrgh... what... where...?
+                  Oh, right. Mom. where... my phone...?""")
+
+            time.sleep(6)
+
+            print("\nYou dig around the blankets wrapping you until you find the cheap phone your mom purchased for you (so you could keep in contact while at school) and press speed dial one.")
+
+            time.sleep(8)
+
+            print("\nRiing... Riing... Riing... Rii-- Click.")
+
+            time.sleep(4)
+
+            print("\nMom:")
+            print("\t... Hello? Oh, {}! You meanie! You made me wait so long to hear the news! So...? How'd it go?".format(name))
+
+            time.sleep(6)
+
+            print("\n{}:".format(name))
+            print("\t...Oh yeah! I made it!! Haha! I made it into Epannian!")
+
+            time.sleep(4)
+
+            print("/nYou glance around and survey the dorm you didn't bother to check out last night. There's the small bed, a tiny dresser beside it and a window that divides the wall across from the bed in half. Aside from that, the room is barren. A typical freshman's room.")          
+
+            time.sleep(8)
+
+            print("\nMom:")
+            print("\tOh my goodness! Oh... I'm so proud of you, {}. My baby, you've made your sisters and I so proud. Oh honey...".format(name))
+
+            time.sleep(6)
+
+            print("\nYou can hear your mom tearing up on the other end.")
+
+            time.sleep(4)
+
+            print("\n{}:".format(name))
+            print("\t...")
+
+            time.sleep(2)
+
+            print("\nMom:")
+            print("\tSniffle... Oh! Before I go, sweetie, I want to let you know-- be careful anytime you go out, ok {}? There's been a lot in the news about threats on Epannian students from rival schools. I know you'll have buddies who want to hang out but be sure you're careful. I worry so much for you now that you're so far away... Be safe, ok hon?".format(name))
+
+            time.sleep(8)
+
+            print("\nYour mind whirrs as you connect the conversation you overheard earlier today to the news of threats on your fellow students.")
+
+            time.sleep(6)
+
+            print("\nMom:")
+            print("\t... Sweetie?")
+
+            time.sleep(2)
+
+            print("\n{}:".format(name))
+            print("\tOh- of course mom, I'll keep my guard up. You don't have to worry, I promise.")
+
+            time.sleep(6)
+
+            print("\nMom:")
+            print("\tSniffle... Alright, {}. I love you. Hmm, but don't forget to have fun, too. Do your best while you're there! Bye...".format(name))
+
+            time.sleep(6)
+
+
+        print("\n{}:".format(name))
+        print("\tHmmm... I guess I'll just follow the crowd to find the cafeteria again.")
+
+        time.sleep(4)
+
+        print("...")
 
 
 
 
+#meet friends at bfast who're in his class
 
+#beginning of class [PE minigame during], cut to final bell
 
+#friends invite mc to spend night in their shared room
 
+#drinking, smoking involved-- choice to participate (end up doing anyway)
 
+#busted by Dr. Matis who's suspiciously out late- Matis speaks w mc privately afterwards
 
+#Matis asks mc to keep an eye out for 'suspicious students' to cover up his own activities and warns mc "trust NO ONE"
 
+#next day, some dorm room doors have scary threat from rivals spray painted on- was done overnight
 
+#mc approaches Dr. Matis, Matis tries to bring over mc to turn "traitor" [running away minigame starts]
 
+#mc in game is inevitably is chased by either head (later expelled, w/ dissappointed family and friends) or Matis (later saved by the head)-- headmaster comes across them in the end if Matis chases and catches mc
+
+#end message: stick to your morals even in strange/poor situations        
+        
+
+                 
 
         
+
+            
+
+
+
+
+
