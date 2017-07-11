@@ -426,7 +426,7 @@ __---___---__---___---__---___---__---___---__
  
 
 
-    [*++*INSERT MINIGAME*++*]")
+    [*++*INSERT MINIGAME*++*]
 
 
       Ding, Dong, Ding, Dong... Ding, Dong, Ding, Dong.
@@ -503,47 +503,54 @@ __---___---__---___---__---___---__---___---__
 
     (The auditorium at night looks eerie, lit only by the dim glow of light from the cafeteria beside it. Two lone figures are standing in front of it.)
 
+        mc:
+            Hey! Come on, guys! Why're you hanging out in the shadows like that? Let's go!
 
-    
+        Figure1:
+            ...
 
-        
-
-
-
-
-
-
+        Figure2:
+            ...
 
 
+        mc:
+            ...Guys?
 
-        
+    (As you close in on the two figures cloaked in shadow, you notice one is much taller than the other, and they seem to be passing papers.)
 
-        
+        mc:
+            Oh, sorry- I thought you were my... friends...
+
+        Dr. Jenner:
+            Well, Ryner? How will you handle this?
+
+        Ryner:
+            ... Oh, (name)... Why'd you have to walk in on this? Now you've seen too much.
+
+        Dr. Jenner:
+            Ugh... stop chitchatting and grab them already!
+
+        Ryner:
+            Too bad it couldn't work out-- Eh? (name)? Ugh, stop running!!
+         
+    [*++*INSERT MINIGAME*++*]
+
+        Headmaster:
+            Well, well, look what we've got here. Dr. Jenner, you're fired. I expect you out by morning. And same goes to you, Ryner. You're expelled.
+
+        mc:
+            ...
+
+        Headmaster:
+             (name), you've done well not to be misguided by their disloyalty.
 
 
 
+    Full Screen:
+            ("CONGRATULATIONS! YOU MADE IT TO THE END!")
 
-
-
-
-
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-            
-
-        
+    final message: be careful and aware if you see something suspicious- even if you know the person(s) involved
+              
 
 
 """)
