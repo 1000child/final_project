@@ -1,8 +1,8 @@
 import time
 
-print("")
+print("Both Sides of the Coin")
 
-print("\nPress the spacebar to START!")
+print("\nPress the spacebar, then enter, to START!")
 
 def greet(name, gamename):
     return """\nCongratulations! Your character, {}, is now ready to begin the {} game.""".format(name,gamename)
@@ -22,7 +22,7 @@ if user_input == " ":
 #if for story    
     if "aw" in str(story_choice).lower():
         gamename = "Awareness"
-        print("You are about to embark on the {} route!  -- But, before you do, please select a character. Are you a girl? Or a boy?".format(gamename))
+        print("\nYou are about to embark on the {} route!  -- But, before you do, please select a character. Are you a girl? Or a boy?".format(gamename))
 
         gender = input()
         if gender == "girl":
@@ -36,15 +36,531 @@ if user_input == " ":
             time.sleep(1)
             print(".", end = ' ')
 
-        print("""You open your eyes and...[placeholder]""") 
+        print("""\nYou open your eyes and you are in a small, comfortable room with the school emblem projected across one wall. There is a tall woman standing across from you at the other end of the dark mahogany table you've been seated at for the last hour and an imposing file folder in her left hand.""") 
+
+        print("\nTeacher:")
+        assignment = """\t{}, you've been assigned under Dr. Jenner with the rest of class 1A. You are to meet them for Orientation at 7:00. You have twenty minutes until report time in the Auditorium. It's just past the cafeteria.""".format(name)
+        print(assignment)
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("""\nThe tall lady levels a stare at you, then turns to exit. Whew! That was stressful- but at long last, you've passed your final interview.""")
+        print("\nYay! You've finally made it into the Laguardian School of Strategy! Now you can send aid your family, or at least relive some of their financial burden.")
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print(hallway())
+
+        for dots in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nYou hesitate for a moment. Do you want to go straight to the Auditorium? Or would you rather explore your new home for the next four years?")
+
+        print("\nType 'auditorium' or 'explore'.")
+
+        free_time = input()
+        if "a" in str(free_time).lower():
+            print("\nAlright! You set off in the direction you believe the cafeteria is in... but you quickly encounter a critical problem. You don't have a clue where anything is, or even where you are now. You look behind you and find you're already hopelessly lost in an unmarked hallway. Oh goodness!")
+        if "e" in str(free_time).lower():
+            print("\nExcellent! You turn on your heel and pick a direction at random to further investigate. This should be fun! For the most part, the building is uninhabited as all the current students are elsewhere, either in classes or in tactical battlefield simulations.")
+
+        for dots in range(14):
+            time.sleep(1)
+            print(".", end = ' ')
         
+        print("\nAs you stride past yet another dark, unmarked door, you hear something break the monotanous sound of your own footsteps. Someone down the hall is humming the national anthem.")
+
+("""rest of the script:
+
+        mc:
+            ...Hello? Who's there? 
+
+
+    (no response- the empty hall proides no clue as to who was there)
+
+
+        mc:
+            Ummm... I heard you earlier. That was the national anthem, right?
+
+    (a moment passes, but a voice soon rings out, and it's owner rounds the corner not long after the voice sounds)
+
+        MaleStudent:
+            Haha you got me! Hey, are you new here? What are you doing so far from the Auditorium?
+
+        mc:
+            Well I--
+
+
+        MaleStudent:
+            Whatever, just follow me. Since there's still time before Orientation, I'll give you a tour.
+
+        mc:
+            Huh?
+
+        Prompt:
+            Do you want to go on a tour?
+
+            a)Um, sure, I wanted to explore a little anyway
+            b)Hmm, no thanks, I'd really rather not risk being late to my first school event
+
+
+        -if chooses a, then:   MaleStudent:
+                                  Cool! I'm Ryner, by the way. What's your name?
+
+                               mc:
+                                  (mc's name).
+
+                               Ryner:
+                                   Hey, so what course are you in? Let me think... All freshman have a choice between the Tactical Comms and Business Study departments, right?
+
+
+        -if chooses b, the:    MaleStudent:
+                                  Aw, that's lame. Well, I'll show you the way at least. It's easy to get lost around here. Hey, it's nice to meet you, ...?
+
+                               mc:
+                                 (mc's name).
+
+                               MaleStudent:
+                                   Alright, (name). I'm Ryner. What department are you studying in? If I'm remembering correctly, you had a choice between Tactical Comms and Buisness Studies, right?
+
+
+
+        mc:
+            Yeah, that's right. I'm enrolled in Business Study.
+
+        Ryner:
+            Cool! I was too, so if you ever want a different opinion on a project, just ask me, ok? Let me know anytime you need help.
+
+        mc:
+            Um... sure. Thanks.
+
+        Ryner:
+            Hey, uh... no offense, but you don't seem too thrilled to be here. 
+            
+        mc:
+            None taken. And yeah, I mean, the school's great and all, but I'm mostly here to take the strain off my family. They don't need another mouth to feed hanging around.
+
+        Ryner:
+            Why'd you go through all the trouble to get in to this school then if you don't even want to be here? There are so many other places you could get into. Why put in the effort for this one?
+
+        mc:
+            Well... when I graduate, I don't want to return back to being a burden for my family- if I get recognized by this school, I'm bound to get a decent job in the government or something.
+
+        Ryner:
+            Jeez. You know, I bet your family wouldn't want you to just slave away your days here; they'd probably want you to enjoy yor life, too. It doesn't all have to be about money and burdens!
+
+        mc:
+            I guess.
+
+        Ryner:
+            I'm serious! I just mean, your family wouldn't want you to be so hard on yourself, that's all. 
+
+        mc:
+            ...Thank you.
+
+    (Ryner appears lost in thought- it looks like he remembered something sad)
+
+        Ryner:
+            ...--Oh! Haha, it's nothing, just some passing advice that you probably won't even remember.
+
+        mc:
+            Nevertheless, thank you.
+
+        Ryner:
+            Hmmm... Alright! Looks like we've made a full loop around, now we're at the Auditorium.
+
+    (A large, squat building is sitting in front of where you two are standing now)
+
+        mc:
+            Thanks again
+
+        Ryner:
+            Seriously, (name), anytime you want help just go to dorm 3 and ask around for me
+
+        mc:
+            Haha, alright, I will! See you around, Ryner.
+
+        Ryner:
+            Yeah, talk to you later sometime. Good luck at Orientation!
+
+__---___---__---___---__---___---__---___---__
+
+    (As the rest of the freshman student body fills in the Auditorium, the Headmaster scales the steps of the stage and begins to address the crowd.)
+
+        Headmaster:
+            Welcome, everyone, to the Laguardian School of Strategy. Everyone, please look forward to a productive year!             
+
+    (He gives his outlook on life and education, the begins introducing the teaching staff)
+
+        Headmaster:
+            And here is our most recent addition to the staff here at Laguardian, Dr. Jenner! She'll be teaching Macro-economics and is the homeroom teacher to all you students assigned to class 1A. Next up, is Mr. Spannend...")
+
+        mc:
+            Oh, looks like that'll be my teacher for the next year. I hope she's lenient...
+
+    (Suddenly the kid seated beside you starts talking to you)
+
+        MaleStudent:
+            Nah, when I met her in the halls earlier, she snapped at me and Jessica, and I quote, "to scram," and "do something worthwhile with our meatsuits". 
+
+        mc:
+            Huh?
+
+        FemaleStudent:
+            Yeah, and she even threatened to give us detention for loitering! I'm Jessica, by the way.
+
+        mc:
+            Whoa... looks like we're in for a rough year. Dang it! ...I just want to peacefully graduate from this place and support myself.
+
+        Jessica:
+            Well, as long as she's our teacher, the 'peaceful' part of that might have to be put on hold. Hey Seita, you're in class 1A too, right?
+
+        Seita:
+            Yurp. Man, I was really hoping to get a teach who'd ignore it if I forgot my homework. This lady looks like she'll whip me if I have a crinkle on the paper!
+
+    (The Headmaster on stage calls up the freshman student body representative to give a speech)
+
+        mc:
+            Sigh...
+
+        Jessica:
+            Well- this is Laguardia! We'll take the good and the bad- after all, we put in so much work and time to get in!
+
+        Seita:
+            I second that.
+
+    (The student on stage finishes his spiel and the Head closes Orientation by telling students to meet back here at 1:00 for tours of the grounds.)
+
+        Jessica:
+            Oh, right! What's your name?
+
+        mc:
+            Haha, I forgot to mention! It's (name).
+
+        Seita:
+            Cool, (name). See you around!
+
+
+__---___---__---___---__---___---__---___---__
+
+
+    (Wow...what a long day! You're ready to pass out; hopefully the night lasts long enough to get a good rest.)
+
+    (You crumple onto your dorm room bed and smile to yourself. You think of your day so far and your family way back home. Oh! They must be wondering how the final interview went. Maybe your mom will pick up if you call.")
+
+        Prompt:
+            Do you want to call Mom now or in the morning?
+            Type 'now' or 'later'
+
+        if calls now:
+             (You dig around for the cheap phone your mom purchased for you (so you could keep in contact while at school) and press speed dial one.")
+
+                Riing... Riing... Riing... Rii-- Click.
+
+                    Mom:
+                        ... Hello? Oh, (name)! You meanie! You made me wait so long to hear the news! So...? How'd it go?
+
+                    mc:
+                        ...Oh yeah! I made it into Laguardia. Haha, finally you guys can take proper care of yourselves. Hey, don't go getting any ideas either, ok? I don't want any gifts or anything.        
+
+             (You glance around and survey the dorm you'll be in for the next year. There's the small bed, a tiny dresser with a mini fridge beside it and a window that divides the wall across from the bed in half. Aside from that, the room is barren. A typical freshman's room.")          
+
+                    Mom:
+                        Oh my goodness! Oh... I'm so proud of you, (name). My baby, you've made your sisters and I so proud. Oh honey...".format(name))
+
+             (You can hear your mom tearing up on the other end.)
+
+                    mc:
+                        ...
+
+                    Mom:
+                        Sniffle... Oh! Before I go, sweetie, I want to let you know-- be careful, ok (name)? There's been a lot in the news about Laguardian students turning out to be spies from rival schools. I know you'll have buddies who want to hang out but be sure you're cautious. I worry so much for you now that you're so far away... Be safe, ok hon?
+                        
+
+             (You wonder about all your fellow students. Ryner, Jessica, Seita... You can't help but get suspicious.")
+
+                    Mom:
+                        ... Sweetie?")
+
+                    mc:
+                        Oh- of course mom, I'll keep my guard up. You don't have to worry, I promise.
+
+
+                    Mom
+                        Sniffle... Alright, (name). I love you. Hmm, but don't forget to have fun, too. Do your best while you're there! Bye...
+
+
+
+             (You collapse back down onto the duvet and feel yourself nodding off.)
+
+                    mc:
+                        Aaaah. Time for some shuteye. hmmm... 
+
+             (...You fall asleep in your clothes and dream deeply of home and distant childhood moments.)
+
+             __---___---__---___---__---___---__---___---__
+
+                 BEEP... BEEP... BEEP... BE--
+
+                    mc:
+                        Urgh... what... where...?
+                        Oh, right. Laguardia...
+
+
+            
+        if calls later:
+             (Yeah... it is already so late- probably best to let her rest and just check in when morning comes. You'll have to set your alarm early, though.)
+
+                    mc:
+                        Aaaah. Time for some shuteye. hmmm... 
+
+             (...You fall asleep in your clothes and dream deeply of home and distant childhood moments.)
+
+            __---___---__---___---__---___---__---___---__
+
+                BEEP... BEEP... BEEP... BE--
+
+                    mc:
+                        Urgh... what... where...?
+                        Oh, right. Laguardia. Hmmm... oh. Mom. where... my phone...?
+
+
+             (You dig around the blankets wrapping you until you find the cheap phone your mom purchased for you (so you could keep in contact while at school) and press speed dial one.")
+
+                Riing... Riing... Riing... Rii-- Click.
+
+                    Mom:
+                        ... Hello? Oh, (name)! You meanie! You made me wait so long to hear the news! So...? How'd it go?"
+
+                    mc:
+                        ...Oh yeah! I made it into Laguardia. Haha, finally you guys can take proper care of yourselves. Hey, don't go getting any ideas either, ok? I don't want any gifts or anything.        
+
+             (You glance around and survey the dorm you'll be in for the next year. There's the small bed, a tiny dresser with a mini fridge beside it and a window that divides the wall across from the bed in half. Aside from that, the room is barren. A typical freshman's room.")          
+
+                    Mom:
+                        Oh my goodness! Oh... I'm so proud of you, (name). My baby, you've made your sisters and I so proud. Oh honey...".format(name))
+
+             (You can hear your mom tearing up on the other end.)
+
+                    mc:
+                        ...
+
+                    Mom:
+                        Sniffle... Oh! Before I go, sweetie, I want to let you know-- be careful, ok (name)? There's been a lot in the news about Laguardian students turning out to be spies from rival schools. I know you'll have buddies who want to hang out but be sure you're cautious. I worry so much for you now that you're so far away... Be safe, ok hon?
+                        
+
+             (You wonder about all your fellow students. Ryner, Jessica, Seita... You can't help but get suspicious.")
+
+                    Mom:
+                        ... Sweetie?")
+
+                    mc:
+                        Oh- of course mom, I'll keep my guard up. You don't have to worry, I promise.
+
+
+                    Mom
+                        Sniffle... Alright, (name). I love you. Hmm, but don't forget to have fun, too. Do your best while you're there! Bye...
+
+
+
+
+
+        mc:
+            Hmmm... I guess I'll just follow the crowd to find the cafeteria again.
+        
+
+    (A steady tickle of people leads to the doors of the massive building.)
+
+
+    (Oh wow! So many students here! You wander over to the line and peek over shoulders to get a glimpse of the menu. As you're straining to stay on your tiptoes, you feel a finger tapping on your shoulder.")
+
+
+        Seita:
+            Heyo, you want a menu?
+
+    (In his hand is a paper printout of the menu on the wall.)
+
+        mc:
+            Huh?
+
+        Jessica:
+            He said a menu, silly.
+
+        mc:
+            Oh. Haha, thanks.
+
+        Seita:
+            Ugh... I'm so not psyched to meet Dr. Jenner in person.
+
+        Jessica:
+            I get the feeling she just doesn't like any of us. Ha, see? She's over there in the corner, staring us all down.
+
+        Seita:
+            Huh, I never would have even noticed he was there. Hey, that's creepy: some kid is standing right next to her. I understand the weirdo teach, but why's he staring us all down like that?
+
+    (You look over to see what random person is staring. Whoa! It's Ryner...?)
+
+        mc:
+            ...That's weird. I met him before Orientation yesterday. He found me in some office hallway and helped me...
+
+    (Your mind whirrs as you remember your mom's words of caution.)
+
+        Jessica:
+            Let's just finish up and go to class. I dont wanna risk being stared at like that if we're late.
+
+    (You finish up breakfast and leave the cafeteria to search for class 1A with your new friends. As soon as you cross the threshold into the room, the late bell sounds and you breathe a collective sigh of relief with Jessica and Seita. As you meander over to the last three available seats at the very front, you hear clacking heels round the corner and stalk to the front desk.)
+
+
+    (All the students settle down and wait silently for her to speak.)
+
+        Dr. Jenner:
+            Alright, now that I've got your attention, I'll make this brief. I'm sure the lot of you are proud to have made it into this prestigious school, and you all share dreams of graduating and leading a long, fulfilling career in our fine military. I'm also sure that at least half of you will not graduate at all. My job from this day forward is to push you until you break, then break you again and again until we can remake you into something worth keeping around. Savor this moment, while you still enjoy living. Buckle up, boy and girls, you've got nothing but a grueling four years ahead of you. ...That will be all. ")                 
+
+        Dr. Jenner:
+            Any questions? No? --Good, then let's get started on what we came here to do. First things first, we've got written and physical exams. We'll use this to measure your potential and progress throughout the year. Last place student is expelled. Prepare yourselves.")                
+ 
+
+
+    [*++*INSERT MINIGAME*++*]")
+
+
+      Ding, Dong, Ding, Dong... Ding, Dong, Ding, Dong.
+
+        Dr. Jenner:
+            That's it, everyone. Class dismissed.
+       
+    (Haaaaah... The entire room exhales in relief.)
+
+        Jessica:
+            Oh. My. God, what a day. I swear she was looking to kill one of us! Poor Debbie got it the worst, it was like she was intent on really ruining her day. All she did was sneak a bite of leftover breakfast!
+              
+        Seita:
+            No kidding, ughhhhh. Not like she eased up on us, either. Nooo, she had to make us run a freaking marathon on day one.
+
+        mc:
+            Yeah, are we gonna sleep well tonight or what. Wow.
+
+        Jessica:
+            Oh, (name), speaking of tonight...
+
+    (Jessica motions you to come in close and Seita looks over his shoulder before turning back to face you.)
+
+        Seita:
+            We're going to the local hang-out later today. Wanna come?
+
+        mc:
+            ...
+
+        Prompt:
+            Would you like to go with Seita and Jessica to the local hang-out?
+            a)Yeah, I was gonna go there for dinner anyway! 
+            b)Hmmm... Sure! I wanted to check it out sometime anyway. 
+            c)Oh, thank you for the offer, but I'm beat. I'm gonna go to my dorm.
+
+        -if chooses a:
+                        Seita:
+                            Awesome, then you wanna meet back at the auditorium at 8:00?
+        
+        -if chooses b:
+                        Seita:
+                            Alright! We'll meet you back at the auditorium, then! How's 8:00 sound?
+        
+        -if chooses c:
+                        Seita:
+                            Hey, c'mon, loosen up a little!
+
+                        Jessica:
+                            Yeah, it's not like we're staying out late or anything. Just come check it out, you can leave if you don't like it.
+        
+                        Seita:
+                            ...Or is it the company? If you don't wanna hang out with us, that's whatever...
+
+                        mc:
+                            No, that's not it at all, really. Sigh... alright. When and where are we meeting?
+                            
+                        Jessica:
+                            Yay!! Haha, we'll meet back at the auditorium at 8:00- don't be late, kay?
+
+        mc:
+            Sounds fine to me.
+
+        Seita:
+            Yes! Alright, see you round, (name).
+
+        mc:
+            See you later, guys.
+
+            
+
+__---___---__---___---__---___---__---___---__
+
+
+
+    (The auditorium at night looks eerie, lit only by the dim glow of light from the cafeteria beside it. Two lone figures are standing in front of it.)
+
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+            
+
+        
+
+
+""")
+
+
+
+
+
+
+
 
 
         
 #if for story            
     if "m" in str(story_choice).lower():
         gamename = "Morality"
-        print("You have selected the {} path! Before you continue, though, please select a character. Are you a girl? Or a boy?".format(gamename))
+        print("/nYou have selected the {} path! Before you continue, though, please select a character. Are you a girl? Or a boy?".format(gamename))
 
         gender = input()
         if gender == "girl":
@@ -76,7 +592,7 @@ if user_input == " ":
             print(".", end = ' ')
 
         print("""\nThe imposing man levels a stare at you, then turns to exit. Whew! That was stressful- but at long last, you've passed your final interview.""")
-        print("\nYay! You've finally made it into the Epannian School of Strategy and Military Command! Now you can proudly say you are a student of the most prestigious school in your country, Epan.")
+        print("\nYay! You've finally made it into the Epannian School of Strategy! Now you can proudly say you are a student of the most prestigious school in your country, Padelia.")
 
         for dots in range(14):
             time.sleep(1)
@@ -109,15 +625,15 @@ if user_input == " ":
             print(".", end = ' ')
 
         print("\nVoices:")
-        print("\t(voice1)... tensions out of hand... somehow... to find out their plans...")
+        print("\t(voice1)... tensions out of hand... somehow... must find out their plans...")
 
         time.sleep(5)
 
-        print("\t(voice2)... but what about the recent... threats... exchange students... not enough information...")
+        print("\t(voice2)... but what about the recent...security increase... threats... not enough information...")
 
         time.sleep(5)
 
-        print("\t(voice1)sigh... it is what it is... contact the Dr. ... know what to do...")
+        print("\t(voice1)sigh... it is what it is... contact... know what to do...")
 
         for dots in range(4):
             time.sleep(1)
@@ -129,9 +645,9 @@ if user_input == " ":
 
         listen = input()
         if "y" in listen:
-            print("\nYou inch in closer and you can hear your own heart beat in the ear that you press to the crack in the door. The voices inside seem to hush even further. What's going on? Threats? The doctor? Find what out? ...you lose yourself in thought.")
+            print("\nYou inch in closer and you can hear your own heart beat in the ear that you press to the crack in the door. The voices inside seem to hush even further. What's going on? Threats? Contact who? Find what out? ...you lose yourself in thought.")
         if "n" in listen:
-            print("\nYou stumble back from the noncommittal door that now seems to hold so many secrets. What's going on? Threats? The doctor? Find what out? ...you lose yourself in thought.")
+            print("\nYou stumble back from the noncommittal door that now seems to hold so many secrets. What's going on? Threats? Contact who? Find what out? ...you lose yourself in thought.")
 
         for dots in range(9):
             time.sleep(1)
@@ -314,9 +830,11 @@ if user_input == " ":
             print("\n ")
             print("___", end = ' ')
 
-        print("\nYou fall back upon your small bed and close your eyes to the unfamiliar dorm room around you.")
+        print("\nWow. A day full of tours and clubs dragging you over to join. You fall back upon your small bed and close your eyes to the unfamiliar dorm room around you."
 
-        time.sleep(6)
+        for time_skips in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
 
         print("\n{}:".format(name))
         print("\tWow...what a long day! I'm ready to pass out; hopefully the night lasts long enough to get a good rest.")
@@ -325,7 +843,9 @@ if user_input == " ":
 
         print("\nYou smile to yourself and think of your day and your family far away back home. Oh! They must be wondering how the final interview went. Maybe your mom will pick up if you call.")
 
-        time.sleep(8)
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
 
         print("\nDo you want to call Mom now or in the morning?")
 
@@ -335,7 +855,9 @@ if user_input == " ":
         if 'n' in when_call:
             print("\nYou dig around for the cheap phone your mom purchased for you (so you could keep in contact while at school) and press speed dial one.")
 
-            time.sleep(8)
+            for time_skips in range(4):
+                time.sleep(1)
+                print(".", end = ' ')
             
             print("\nRiing... Riing... Riing... Rii-- Click.")
 
@@ -372,7 +894,9 @@ if user_input == " ":
 
             print("\nYour mind whirrs as you connect the conversation you overheard earlier today to the news of threats on your fellow students.")
 
-            time.sleep(8)
+            for time_skips in range(4):
+                time.sleep(1)
+                print(".", end = ' ')
 
             print("\nMom:")
             print("\t... Sweetie?")
@@ -391,7 +915,9 @@ if user_input == " ":
 
             print("Hmmm. You collapse back down onto the duvet and feel yourself nodding off.")
 
-            time.sleep(6)
+            for time_skips in range(4):
+                time.sleep(1)
+                print(".", end = ' ')
 
             print("\n{}:".format(name))
             print("\tAaaah. Time for some shuteye. hmmm... ")
@@ -404,8 +930,7 @@ if user_input == " ":
 
             for time_skips in range(4):
                 time.sleep(1)
-                print("\n ")
-                print("__", end = ' ')
+                print("___", end = ' ')
 
             print("\nBEEP... BEEP... BEEP... BE--")
 
@@ -421,7 +946,9 @@ if user_input == " ":
         if 'l' in when_call:
             print("\nYeah... it is already so late- probably best to let her rest and just check in when morning comes. You'll just have to set your alarm early.")
 
-            time.sleep(8)
+            for time_skips in range(9):
+                time.sleep(1)
+                print(".", end = ' ')
 
             print("\n{}:".format(name))
             print("\tAaaah. Time for some shuteye. hmmm... ")
@@ -434,8 +961,7 @@ if user_input == " ":
 
             for time_skips in range(4):
                 time.sleep(1)
-                print("\n ")
-                print("__", end = ' ')
+                print("___", end = ' ')
 
             print("\nBEEP... BEEP... BEEP... BE--")
 
@@ -449,7 +975,9 @@ if user_input == " ":
 
             print("\nYou dig around the blankets wrapping you until you find the cheap phone your mom purchased for you (so you could keep in contact while at school) and press speed dial one.")
 
-            time.sleep(8)
+            for time_skips in range(9):
+                time.sleep(1)
+                print(".", end = ' ')
 
             print("\nRiing... Riing... Riing... Rii-- Click.")
 
@@ -465,9 +993,11 @@ if user_input == " ":
 
             time.sleep(4)
 
-            print("/nYou glance around and survey the dorm you didn't bother to check out last night. There's the small bed, a tiny dresser beside it and a window that divides the wall across from the bed in half. Aside from that, the room is barren. A typical freshman's room.")          
+            print("/nYou glance around and survey the dorm you didn't bother to check out last night. There's the small bed, a tiny dresser with a mini fridge beside it and a window that divides the wall across from the bed in half. Aside from that, the room is barren. A typical freshman's room.")          
 
-            time.sleep(8)
+            for time_skips in range(9):
+                time.sleep(1)
+                print(".", end = ' ')
 
             print("\nMom:")
             print("\tOh my goodness! Oh... I'm so proud of you, {}. My baby, you've made your sisters and I so proud. Oh honey...".format(name))
@@ -476,7 +1006,9 @@ if user_input == " ":
 
             print("\nYou can hear your mom tearing up on the other end.")
 
-            time.sleep(4)
+            for time_skips in range(4):
+                time.sleep(1)
+                print(".", end = ' ')
 
             print("\n{}:".format(name))
             print("\t...")
@@ -490,7 +1022,9 @@ if user_input == " ":
 
             print("\nYour mind whirrs as you connect the conversation you overheard earlier today to the news of threats on your fellow students.")
 
-            time.sleep(6)
+            for time_skips in range(4):
+                time.sleep(1)
+                print(".", end = ' ')
 
             print("\nMom:")
             print("\t... Sweetie?")
@@ -513,30 +1047,500 @@ if user_input == " ":
 
         time.sleep(4)
 
-        print("...")
+        print("\nA steady tickle of people leads to the doors of the massive building.")
+
+        for time_skips in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nOh wow! So many students here! You wander over to the line and peek over shoulders to get a glimpse of the menu. As you're straining to stay on your tiptoes, you feel a finger tapping on your shoulder.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nMale Student:")
+        print("\tHeyo, you want a menu?")
+
+        print("\nIn his other hand is a paper printout of the menu on the wall.")
+
+        time.sleep(2)
+
+        print("\n{}:".format(name))
+        print("\tHuh?")
+
+        time.sleep(2)
+
+        print("\nFemale Student:")
+        print("\tHe said a menu, silly.")
+
+        time.sleep(2)
+
+        print("\n{}:".format(name))
+        print("\tOh. Um, sure. Thank you!")
+
+        time.sleep(4)
+
+        print("\nFemale Student:")
+        print("\tHaha no problem! I'm Kilia, this guy here is Jordan. We're in the Tactical Communications department, what about you?")
+
+        time.sleep(6)
+
+        print("\n{}:".format(name))
+        print("\tOh, neat! I'm {}- also in the Tactical Comms department. What about your homeroom?".format(name))
+
+        time.sleep(6)
+
+        print("\nJordan:")
+        print("\tMatis. I got a look at him at the Orientation. Seems like he's not gonna let us slack on homework, that's for sure.")
+
+        time.sleep(6)
+
+        print("\nKilia:")
+        print("\tUm, ew! C'mon...")
+
+        time.sleep(2)        
+
+        print("\n{}:".format(name))
+        print("\tActually, I ran into him before the Orientation. He found me when I was lost and helped me back and all. I don't think he likes me, though...")
+
+        time.sleep(8)
+
+        print("\nKilia:")
+        print("\tI get the feeling he just doesn't like any of us. Ha, see? He's over there in the corner, staring us all down.")
+
+        time.sleep(6)
+
+        print("\nJordan:")
+        print("\tWhoa! That's creepy.")
+
+        time.sleep(4)
+
+        print("\n{}:".format(name))
+        print("\tHuh, I never would have even noticed he was there.")
+
+        time.sleep(4)
+
+        print("\nKilia:")
+        print("\tLet's just finish up and go to class. I dont wanna risk being stared at like that if we're late.")
+
+        for time_skips in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nYou finish up breakfast and leave the cafeteria to search for class 1A with your new friends. As soon as you cross the threshold into the room, the late bell sounds and you breathe a collective sigh of relief with Kilia and Jordan as you meander over to the last three available seats at the very front.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nYou hear the same clunking footsteps from yesterday enter the room just as you've sat down. All the students settle down and wait silently for him to speak.")
+
+        for time_skips in range(4):
+            time.sleep(1)
+            print(".", end = ' ')             
+
+        print("\nDr. Matis:")
+        print("\tAlright, now that I've got your attention, I'll make this brief. I'm sure the lot of you are proud to have made it into this prestigious school, and you all share dreams of graduating and leading a long, fulfilling career in our fine military. I'm also sure that at least half of you will not graduate at all. My job from this day forward is to push you until you break, then break you again and again until we can remake you into something worth keeping around. Savor this moment, while you still enjoy living. Buckle up, boy and girls, you've got nothing but a grueling four years ahead of you. ...That will be all. ")                 
+
+        for time_skips in range(14):
+            time.sleep(1)
+            print(".", end = ' ')        
+
+        print("\nDr. Matis:")
+        print("\tAny questions? No? --Good, then let's get started on what we came here to do. First things first, we've got written and physical exams. We'll use this to measure your potential and progress throughout the year. Last place student is expelled. Prepare yourselves.")                
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print("___", end = ' ')
+
+        print("[*++*INSERT MINIGAME*++*]")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print("___", end = ' ')
+
+        print("\nDing, Dong, Ding, Dong... Ding, Dong, Ding, Dong.")
+
+        time.sleep(4)
+
+        print("\nDr. Matis:")
+        print("\tThat's it, everyone. Class dismissed.")
+
+        time.sleep(4)
+
+        print("\nHaaaaah... The entire room exhaled in relief.")
+
+        print("\nKilia:")
+        print("\tOh. My. God, what a day. I swear he was looking to kill one of us! Poor Debbie got it the worst, it was like he was intent on really ruining her day. All she did was sneak a bite of leftover breakfast!")
+              
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nJordan:")
+        print("\tNo kidding, ughhhhh. Not like he eased up on us, either. Nooo, he had to make us run a freaking marathon on day one.")
+
+        time.sleep(6)
+              
+        print("\n{}:".format(name))
+        print("\tHaha, yeah, are we gonna sleep well tonight or what. Wow.")
+
+        time.sleep(4)
+
+        print("\nKilia:")
+        print("\tOh, {}, speaking of tonight...".format(name))
+
+        time.sleep(2)      
+              
+        print("Jordan motions you to come in close and Kilia looks over her shoulder before turning back to face you.")
+
+        for time_skips in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nKilia:")
+        print("\tSo, tonight...")
+
+        time.sleep(2)      
+
+        print("\nJordan:")
+        print("\tWe were thinking we all meet up in my room after dinner and spend our first night cooling off and relaxing. Nothing crazy, just some fun.")      
+
+        time.sleep(8)
+        
+        print("\n{}:".format(name))
+        print("\tUm, sure, I guess. What room? I wanna grab my clothes before coming over.")
+
+        time.sleep(6)
+        
+        print("\nKilia:")
+        print("\t105. We're meeting there at 8:30, so don't be late, kay?")
+
+        time.sleep(4)
+
+        print("\n{}:".format(name))
+        print("\tSounds good, then. Hey, guys, I'm gonna go take a shower, so see you at dinner, alright?")       
+
+        time.sleep(4)
+
+        print("\nJordan:")
+        print("\tYeah, me too, I'm outta here. I'll be back when I smell a little less like gorilla.")
+
+        time.sleep(4)
+
+        print("\nKilia:")
+        print("\tThen makes all three of us. See you after dinner!")      
+              
+        for time_skips in range(4):
+            time.sleep(1)
+            print("___", end = ' ')
+
+        print("\nAlright! It's 8:20. Now you're ready to sneak over- you've already made sure you have everything you'll need tomorrow in your overnight bag.")
+
+        for time_skips in range(4):
+            time.sleep(1)
+            print(".", end = ' ')
+        
+        print("\nKnock, knock")
+
+        time.sleep(2)      
+
+        print("\n{}:".format(name))
+        print("\t(whispers) Hey there, guys, it's me, {}.")
+
+        time.sleep(2)      
+
+        print("\nThe door is silently pulled inwards and light spills into the dark hallway. An unidentifiable silouette tugs you by the arm into the room and quickly shuts the door behind you, stuffing a cloth into the cracks of the door so the light doesn't escape.")      
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nKilia:")
+        print("\tHey there. Why'd you make us wait so long? You big meanie.")
+
+        time.sleep(4)
+
+        print("\nYou look down and check your watch. 8:29.")
+
+        time.sleep(4)
+
+        print("\nJordan:")
+        print("\tHey, you're here! Ok, it's finally time to pull out the goodies. We didn't want to start without you, {}.".format(name))
+
+        time.sleep(6)
+
+        print("\nKilia grasps a bottle from the mini fridge on the dresser and tosses it over to Jordan, and is about to toss one over to you as well.")
+
+        time.sleep(6) 
+
+        print("What will you do?")
+
+        print("""\n
+              a)Shake your head and say, "Nah, I'm fine. I'm such a lightweight anyway so it's best if I don't"
+              b)Hold up both hands to catch it, you're ready to have some fun tonight
+              c)Shrink back because you're not sure if you want to know what that bottle has in it
+              """)
+        to_drink = input()      
+        if to_drink == "a":
+            print("\nKilia:")
+            print("\tHey whatever, that's cool, {}.".format(name))
+              
+        if to_drink == "b":
+            print("\nKilia:")
+            print("\tHaha, alriiight, here you go!")
+              
+        if to_drink == "c":
+            print("\nKilia:")
+            print("\tHuh? Oh, hey if you don't wanna that's totally fine, {}. We're just tryin' to relax, not pressure you or anything.".format(name))
+
+        time.sleep(6)
+        
+        print("\n{}:".format(name))
+        print("\tSo... are we gonna play a game or something? Pop in a movie?")
+
+        time.sleep(4)
+
+        print("\nJordan:")
+        print("\tOh, right! So we got a choice of games and movies, whatever you're into. I brought a console too, if you wanna play Mario Kart. That's the only one I brought though.")
+
+        time.sleep(8)
+
+        print("\nWhat would you like to do?")
+
+        print("""\t
+1)A board game! Do you have Monopoly?
+2)Hey, I'm the boss at Mario Kart
+3)Oooh let's do a movie night- do you have any horror flicks?
+4)Uuh it honestly could go either way- one of you choose for me
+""")      
+
+        to_do = input()
+
+        print("\nJordan:")
+        print("\tYeah, sure! ...let me just grab it, I think I put it on the--")
+
+        time.sleep(4)      
+
+        print("\nCreeeaaak")
+
+        time.sleep(2)
+
+        print("\nJordan:")
+        print("\tHuh? ... Oh.")
+
+        time.sleep(2)       
+
+        print("\nDr. Matis:")
+        print("\tHmm! What have we here? First-day students breaking curfew... sneaking out and about at night... in possession of alcohol on school grounds... tut, tut. You should know this is easily grounds for expulsion, especially given the recent tensions and threats from rival schools. I don't believe the headmaster is in a forgiving mood at the moment.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+      
+        print("\n{}:".format(name))
+        print("\t...")
+
+        time.sleep(2)
+
+        print("\nJordan:")
+        print("\t...")
+
+        time.sleep(2)
+
+        print("\nKilia:")
+        print("\t...")
+
+        time.sleep(2)
+
+        print("\nDr. Matis:")
+        print("\t... Hmph! Lucky for you, I am feeling forgiving today, unlike your headmaster. Be grateful and get to your own bed. It's late out, none of us should even be awake.") 
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nNone of you are able to look Dr. Matis in the eye as you all gather you things together and walk out the door. As you pass him on the way out, Dr. Matis grabs your arm and leans in to say something.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nDr. Matis:")
+        print("\t... Meet me in my room at 1:00. I need to confirm something.")
+
+        time.sleep(4)
+
+        print("\n{}:".format(name))
+        print("\t...")
+
+        print("\nYou stare bewildered as you walk by, wondering what it is he'd want to talk to you about. Hopefully nothing bad! Oh goodness, hopefully he doesn't want to rescind his 'forgiveness' or anything...")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')      
+
+        print("\nIt's 12:50. You're about to sneak out of your room for the second time tonight, although this time there's an entirely different feeling roiling in the pit of your stomach.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nYou feel your way through the hallways that eerily remind you of a nightmarish reoccurance of the first time you were lost in them. Once you reach the door to enter class 1A, you hesitate. You want to turn back now. Something about this atmosphere spells trouble.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+              
+        print("\nThe door cracks open. A shadowed face appears from the dark within, peering through to examine the contents of the hall outside. You can feel when his gaze reaches you, and you freeze like a deer in headlights. The door opens further, and he gestures you inside.")
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')      
+
+        print("\nInside, the once benign classroom appears mysterious and foreign. Shadows weave across the floor and the windows to the side let in just enough moonlight to emphasize the darkness. Dr. Matis turns to look out the window and begins to speak softly.")
+        
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+
+        print("\nDr. Matis:")
+        print("\t... Yesterday, I know you heard the conversation between myself and another. For the sake of safety, I must asssume you heard everything.")
+
+        time.sleep(6)
+
+        print("\n{}:".format(name))
+        print("\tHuh? Oh, no- really I only accidentally caught a bit of conversation but I've no idea what it--")
+
+        time.sleep(4)
+
+        print("\nDr. Matis:")
+        print("\tEnough! I haven't called you here to interrogate you or anything- as if I would believe that, anyway. Instead, I have a proposal for you.")     
+
+        time.sleep(6)
+
+        print("\n{}:".format(name))
+        print("\tHuh?")
+
+        time.sleep(2)
+
+        print("\nDr. Matis:")
+        print("\tI was sent here to keep an eye on the local comings and goings by the Laguardian Rival School. From the very first moment I got here though, someone had already discovered my true identity and tried to run off with it. Of course, you still haven't said anything, so I've got to wonder... maybe you're interested in what I'm doing?)
+
+        for time_skips in range(14):
+            time.sleep(1)
+            print(".", end = ' ')      
+
+        print("\n{}:".format(name))
+        print("\tUmmm, honestly, sir--")
+
+        print("\nDr. Matis:")
+        print("\tNo more lies! What did I say before? ...Anyway, with that thought in mind, I invited you here so I could gauge your interest. So? Are you interested?
+
+        for time_skips in range(9):
+            time.sleep(1)
+            print(".", end = ' ')
+        
+        print("\n{}:".format(name))
+        print("\tI'm... sorry to dissapoint, sir--")
+
+        print("\nDr. Matis:")
+        print("\tKeep in mind, I have the materials necessary to expel you in an instant if I hear something I don't like. Now go on, what were you going to say?")
+
+        print("""\t
+a)...Very well, sir. I'll do whatever you ask, just dont expel me, please. 
+b)Oooh, spying? Fun! Sign me up, I don't care what it's for!
+c)...It still doesn't quite sit right with me. And... sir? Don't forget, now I've got material on you too so please don't bother me with this again.
+""")
+        spy? = input()
+        if spy? == "a":
+            print("\nDr. Matis:")
+            print("\tNow, that's what I was hoping you'd say, {}! Funny how it all works--".format(name))
+
+            print("Creeeaaak.")
+
+            time.sleep(4)
+
+            print("\nDr. Matis:")
+            print("\tHuh? Headmaster? ...Oh no! Run!")
+
+            print("[*++*INSERT MINIGAME 2*++*]")
+
+            print("\nHeadmaster:")
+            print("\tWell, well, look what we've got here. A few rats to be flushed out!")
+
+            print("GAME OVER >> EXPULSION")
+
+            time.sleep(4)
+
+            print("stick to your morals even in strange/poor situations")
+              
+        if spy? == "b":
+            print("\nDr. Matis:")
+            print("\tNow, that's what I was hoping you'd say, {}! Funny how it all works--".format(name))
+
+            print("Creeeaaak.")
+
+            time.sleep(4)  
+
+            print("\nDr. Matis:")
+            print("\tHuh? Headmaster? ...Oh no! Run!")
+
+            print("[*++*INSERT MINIGAME 2*++*]")
+
+            print("\nHeadmaster:")
+            print("\tWell, well, look what we've got here. A few rats to be flushed out!")
+
+            print("GAME OVER >> EXPULSION")
+
+            time.sleep(4)
+
+            print("final message: stick to your morals even in strange/poor situations")
+              
+        if spy? == "c":
+            print("\nDr. Matis:")
+            print("\tHmm, that's not what I was hoping you'd say, {}. Too bad it couldn't work out--.".format(name))
+
+            print("Creeeaaak.")
+
+            time.sleep(4)
+
+            print("\nDr. Matis:")
+            print("\tEh? {}? Ugh, stop running!!".format(name))
+
+            print("[*++*INSERT MINIGAME 2*++*]")  
+              
+            print("\nHeadmaster:")
+            print("\tWell, well, look what we've got here. Dr. Matis, you're fired. I expect you out by morning. {}, you've done well not to be misguided by this man's disloyalty.".format(name))
+
+            time.sleep(8)
+
+            print("CONGRATULATIONS! YOU MADE IT TO THE END!")
+
+            time.sleep(4)
+
+            print("final message: stick to your morals even in strange/poor situations")
+              
 
 
 
 
-#meet friends at bfast who're in his class
+#---meet friends at bfast who're in his class
 
-#beginning of class [PE minigame during], cut to final bell
+#---beginning of class [PE minigame during], cut to final bell
 
-#friends invite mc to spend night in their shared room
+#---friends invite mc to spend night in their shared room
 
-#drinking, smoking involved-- choice to participate (end up doing anyway)
+#---drinking involved-- choice to participate
 
-#busted by Dr. Matis who's suspiciously out late- Matis speaks w mc privately afterwards
+#---busted by Dr. Matis who's suspiciously out late
 
-#Matis asks mc to keep an eye out for 'suspicious students' to cover up his own activities and warns mc "trust NO ONE"
+#---Dr. Matis approaches mc, Matis tries to bring over mc to turn "traitor" [running away minigame starts]
 
-#next day, some dorm room doors have scary threat from rivals spray painted on- was done overnight
+#---mc in game is inevitably is chased by either head (later expelled, w/ dissappointed family and friends) or Matis (later saved by the head)-- headmaster comes across them in the end if Matis chases and catches mc
 
-#mc approaches Dr. Matis, Matis tries to bring over mc to turn "traitor" [running away minigame starts]
-
-#mc in game is inevitably is chased by either head (later expelled, w/ dissappointed family and friends) or Matis (later saved by the head)-- headmaster comes across them in the end if Matis chases and catches mc
-
-#end message: stick to your morals even in strange/poor situations        
+#---end message: stick to your morals even in strange/poor situations        
         
 
                  
