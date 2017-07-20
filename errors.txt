@@ -1,0 +1,21 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 1696: end of line expected.
+    ir laugh "Excellent!" "I turn on my heel and pick a random direction to explore."
+                          ^
+
+File "game/script.rpy", line 1921: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    "Oh, right. Laguardia..."
+    ^
+
+File "game/script.rpy", line 2216: end of line expected.
+    ii laugh "Excellent!" "I turn on my heel and pick a random direction to explore."
+                          ^
+
+File "game/script.rpy", line 2441: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    "Oh, right. Laguardia..."
+    ^
+
+Ren'Py Version: Ren'Py 6.99.12.4.2187
